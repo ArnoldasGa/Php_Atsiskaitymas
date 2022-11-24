@@ -1,0 +1,12 @@
+Destination: "Paris".
+Title: "Romantic Paris", "Hidden Paris".
+Total: 99500
+************
+Destination: "New York".
+Title: "Amazing New York".
+Total: 56679
+************
+Destination: "Sydey".
+Title: "Spectacular Sydey".
+Total: 37170
+************
