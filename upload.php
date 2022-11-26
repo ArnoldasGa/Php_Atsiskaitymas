@@ -1,7 +1,9 @@
 <html>
-    <body>
-        <button onclick="history.back()">Go Back</button> <br>
-    </body>
+
+<body>
+    <button onclick="history.back()">Go Back</button> <br>
+</body>
+
 </html>
 
 
@@ -18,7 +20,7 @@ if ($error !== UPLOAD_ERR_OK) {
 }
 
 $fileTmpPath = $file['tmp_name'];
-$fileStoragePath = 'exercises5/' .  $fileName;
+$fileStoragePath = 'exercises5/' . $fileName;
 
 move_uploaded_file($fileTmpPath, $fileStoragePath);
 

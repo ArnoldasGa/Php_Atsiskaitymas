@@ -1,13 +1,14 @@
 <?php
 
 /*
- PAPILDOMAS
- 7. Parašykite programą, kuri sugeneruotų ornamentą: https://iili.io/H3J974e.png . 
- Ornamentas turi būti sugeneruotas naudojant HTML ir PHP. (2 balai)
+PAPILDOMAS
+7. Parašykite programą, kuri sugeneruotų ornamentą: https://iili.io/H3J974e.png . 
+Ornamentas turi būti sugeneruotas naudojant HTML ir PHP. (2 balai)
 */
 ?>
 
 <html lang="">
+
 <head>
     <style>
         .collumn {
@@ -28,28 +29,27 @@
     </style>
     <title></title>
 </head>
+
 <body>
-<table>
-    <tbody>
-    <?php for ($j = 0; $j < 7; $j++) { 
+    <table>
+        <tbody>
+            <?php for ($j = 0; $j < 7; $j++) {
         $a = 6;
-        ?>
-        <tr>
-            <?php for ($i = 0; $i < 7; $i++) {
-                $displayClass = "odd";
-                if ($j == $i){
-                    $displayClass = "even";
-                }
-                if ($a == $j){
-                    $displayClass = "even";
-                }
-                $a--;
-                ?>
+    ?>
+            <tr>
+                <?php for ($i = 0; $i < 7; $i++) {
+            $displayClass = "odd";
+            if ($j == $i || $a == $j) {
+                $displayClass = "even";
+            }
+            $a--;
+            ?>
                 <td class="collumn <?= $displayClass; ?>"></td>
+                <?php } ?>
+            </tr>
             <?php } ?>
-        </tr>
-    <?php } ?>
-    </tbody>
-</table>
+        </tbody>
+    </table>
 </body>
+
 </html>
